@@ -1,0 +1,44 @@
+
+header, 
+nav {
+    padding: 80px 0;
+}
+
+nav li {
+    line-height: 2rem;
+    border-bottom: 1px solid $primary;
+    transition: 0.7s;
+    &:hover {
+        color: $secondary;
+        border-bottom: 1px solid $secondary;
+    }
+}
+
+.logo {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.logo img {
+    animation: spin 20s linear inifinite;
+}
+
+@keyframes spin { 
+    100% { 
+        transform:rotate(360deg); 
+    }
+}
+
+span {
+    display: block;
+}
+
+.fixedHeader {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.about p {
+    width: 60%;
+}

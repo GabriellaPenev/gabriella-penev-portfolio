@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/f73f12df72.js" crossorigin="anonymous"></script>
@@ -21,20 +22,23 @@
 <body>
     <header>
         <div class="wrapper">
-            <h1>Gabriella Penev</h1>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#connect">Connect</a></li>
-                </ul>
-            </nav>
-            <div>
+            <div class="fixedHeader">
+                <img class="logo" src="./assets/gp-logo.png" alt="">
+                <h1>Web Developer <span>Gabriella Penev</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="about">
                 <h2>I'm Gabriella</h2>
                 <p>Interested in learning, engaging with community, and testing out new ideas. Designing thoughtfully
                     and developing minimally is key to my work. In my projects I strive to combine clean and engaging
                     visual aethetics with seamless and accessible code.</p>
-                <p>I presently live, and develop/create/think/play/design in Toronto</p>
+                <p>I presently live, and develop/create/think/play/design in Toronto.</p>
             </div>
         </div>
     </header>
@@ -42,94 +46,102 @@
     <main>
         <section class="wrapper">
             <h3 id="projects">Projects</h3>
-            <div class="project">
-                <div>
+            <div class="project reverse">
+                <div class="preview">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./assets/drag-netwerq-laptop-preview.png" alt="">
                     </a>
                 </div>
-                <div>
+                <div class="projectInfo">
                     <h4><a href="https://dragnetwerq.netlify.app/index.html">Drag Netwerq</a></h4>
-                    <p>description of my project here</p>
-                    <ul>
+                    <p>Powered by the 'No Key No Shade' rest API, this Vanilla Javascript based application invites the
+                        user to select a season
+                        of Ru Paul's Drag Race to display the most memorable quotes from that season's
+                        contestants. Once the user clicks on their favourite quote the page displays which Queen said
+                        it,
+                        as well as their headshot photo.</p>
+                    <ul class="toolkit">
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>SCSS</li>
                         <li>JavaScript</li>
                         <li>Rest APIs</li>
                         <li>Pair Programming</li>
-                        <li>Git</li>
+                        <li>Git & GitHub</li>
                         <li>Responsive</li>
                         <li>Accessible</li>
                     </ul>
 
-                    <p><a href="">See the code</a></p>
+                    <p class="link"><a href="">See the code</a></p>
                     <p>Developed with <a href="#">Matt Russell</a></p>
                 </div>
             </div>
             <div class="project">
-                <div>
+                <div class="preview">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./assets/plant-personality-laptop-preview.png" alt="">
                     </a>
                 </div>
-                <div>
+                <div class="projectInfo">
                     <h4><a href="">Plant Personality</a></h4>
-                    <p>description of my project here</p>
-                    <ul>
+                    <p>A fun quiz that calculates which houseplant the user's personality most closely resembles by
+                        utilizing jQuery and storing the user's selections.</p>
+                    <ul class="toolkit">
                         <li>HTML5</li>
                         <li>CSS3</li>
-                        <li>SCSS</li>
                         <li>jQuery</li>
-                        <li>Rest APIs</li>
+                        <li>Git & GitHub</li>
                         <li>Responsive</li>
                         <li>Accessible</li>
                     </ul>
 
-                    <p><a href="">See the code</a></p>
+                    <p class="link"><a href="">See the code</a></p>
                 </div>
             </div>
-            <div class="project">
-                <div>
+            <div class="project reverse">
+                <div class="preview">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./assets/bookfinder-laptop-preview.png" alt="">
                     </a>
                 </div>
-                <div>
+                <div class="projectInfo">
                     <h4><a href="">Bookfindr</a></h4>
-                    <p>description of my project here</p>
-                    <ul>
+                    <p>By fetching data from the Open Library API, this project engages the user by suggesting book
+                        titles based on the user's subject choice, displaying the book title and cover on the page.
+                    </p>
+                    <ul class="toolkit">
                         <li>HTML5</li>
                         <li>CSS3</li>
-                        <li>SCSS</li>
                         <li>jQuery</li>
+                        <li>Git & GitHub</li>
                         <li>Responsive</li>
                         <li>Accessible</li>
                     </ul>
 
-                    <p><a href="">See the code</a></p>
+                    <p class="link"><a href="">See the code</a></p>
                 </div>
             </div>
             <div class="project">
-                <div>
+                <div class="preview">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./assets/creative-laptop-preview.png" alt="">
                     </a>
                 </div>
-                <div>
+                <div class="projectInfo">
                     <h4><a href="">Creative Agency</a></h4>
-                    <p>This project is a multi-page site including a homepage, blog and contact form. It follows the
-                        style guide and PSD layout. In addition it is responsive and accessble so anyone can enjoy it on
-                        any device.</p>
-                    <ul>
+                    <p>A pixel-perfect multi-page site including a homepage, blog and contact form for a mock
+                        branding agency. It follows the
+                        style guide and PSD layout, with my own interpretations for the responsive layouts.</p>
+                    <ul class="toolkit">
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>SCSS</li>
+                        <li>Git & GitHub</li>
                         <li>Responsive</li>
                         <li>Accessible</li>
                     </ul>
 
-                    <p><a href="">See the code</a></p>
+                    <p class="link"><a href="">See the code</a></p>
                 </div>
             </div>
         </section>
@@ -137,52 +149,32 @@
         <section class="wrapper">
             <h3 id="skills">Skills</h3>
             <div class="skills">
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-html5"></i>HTML5
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-css3-alt"></i>CSS3
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-sass"></i>SCSS
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-square-js"></i>JavaScript
-                    </li>
-                    <li>
-                        <i class="devicon-jquery-plain"></i> jQuery
-                    </li>
-                    <li>
-                        <i class="devicon-firebase-plain"></i>Firebase
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-react"></i>React
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-github"></i>Git & GitHub
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-mobile-screen-button"></i>Responsive Design
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-users-line"></i>Accessibility
-                    </li>
+                <ul class="skillIcons">
+                    <li><i class="fa-brands fa-html5"></i>HTML5</li>
+                    <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+                    <li><i class="fa-brands fa-sass"></i>SASS</li>
+                    <li><i class="fa-brands fa-square-js"></i>JavaScript</li>
+                    <li><i class="devicon-jquery-plain"></i>jQuery</li>
+                    <li><i class="devicon-firebase-plain"></i>Firebase</li>
+                    <li><i class="fa-brands fa-react"></i>React</li>
+                    <li><i class="fa-brands fa-github"></i>Git & GitHub</li>
+                    <li><i class="fa-solid fa-mobile-screen-button"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-users-line"></i>Accessibility</li>
                 </ul>
             </div>
         </section>
         <section class="wrapper">
             <h3 id="connect">Connect</h3>
             <div class="connectFlex">
-            <ul>
-                <li><a href="mailto:gabriellapenev@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            </ul>
-        </div>
+                <ul>
+                    <li><a href="mailto:gabriellapenev@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="wrapper">
         <p>Made by Gabriella Penev © 2022</p>
     </footer>
 

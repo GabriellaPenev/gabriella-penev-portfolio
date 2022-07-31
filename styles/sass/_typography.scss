@@ -1,0 +1,26 @@
+
+html {
+    font-size: 125%;
+    font-family: $font;
+    color: $primary;
+    background-color: $background;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+} 
+
+h1, h3 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

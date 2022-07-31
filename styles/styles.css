@@ -234,3 +234,205 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul,
+li,
+a,
+input,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 125%;
+  font-family: "Red Hat Text", sans-serif;
+  color: #F5F4F4;
+  background-color: #33504d;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h1, h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header,
+nav {
+  padding: 80px 0;
+}
+
+nav li {
+  line-height: 2rem;
+  border-bottom: 1px solid #F5F4F4;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+nav li:hover {
+  color: #b08564;
+  border-bottom: 1px solid #b08564;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 80px;
+}
+
+.logo img {
+  -webkit-animation: spin 20s linear inifinite;
+          animation: spin 20s linear inifinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+span {
+  display: block;
+}
+
+.fixedHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about p {
+  width: 60%;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.project .projectInfo,
+.project .preview {
+  width: 50%;
+}
+
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.toolkit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.toolkit li {
+  padding: 8px;
+  margin: 5px 5px 5px 0;
+  border: 1px solid #b08564;
+  border-radius: 15px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.skillIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.skillIcons li {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+.skillIcons li:hover {
+  color: #b08564;
+}
+.skillIcons li i {
+  font-size: 2.5rem;
+  padding: 10px 0;
+}
+
+.link {
+  text-transform: uppercase;
+}
+.link a {
+  padding: 5px;
+  border-top: 1px solid #b08564;
+  border-bottom: 1px solid #b08564;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  letter-spacing: 2px;
+}
+.link a:hover {
+  color: #b08564;
+  border-left: 1px solid #b08564;
+  border-right: 1px solid #b08564;
+  border-radius: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}

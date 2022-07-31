@@ -1,0 +1,64 @@
+.project {
+    display: flex;
+    align-items: center;
+
+    .projectInfo,
+    .preview {
+        width: 50%;
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.toolkit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    li {
+        padding: 8px;
+        margin: 5px 5px 5px 0;
+        border: 1px solid $secondary;
+        border-radius: 15px;
+        transition: 0.7s;
+    }
+}
+
+.skillIcons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li {
+        transition: 0.7s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        font-size: 0.8rem;
+        &:hover {
+            color: $secondary;
+        }
+        i {
+            font-size: 2.5rem;
+            padding: 10px 0;
+        }
+    }
+}
+
+.link {
+    text-transform: uppercase;
+    a {
+        padding: 5px;
+        border-top: 1px solid $secondary;
+        border-bottom: 1px solid $secondary;
+        transition: 0.7s;
+        letter-spacing: 2px;
+        &:hover {
+            color: $secondary;
+            border-left: 1px solid $secondary;
+            border-right: 1px solid $secondary;
+            border-radius: 15px;
+        }
+    }
+}
