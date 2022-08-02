@@ -266,9 +266,10 @@ html {
 h1 {
   font-size: 3rem;
   font-weight: 500;
+  text-align: center;
 }
 
-h1, h3 {
+h1, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -280,11 +281,6 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-header,
-nav {
-  padding: 80px 0;
 }
 
 nav li {
@@ -303,40 +299,38 @@ nav li:hover {
   width: 80px;
 }
 
-.logo img {
-  -webkit-animation: spin 20s linear inifinite;
-          animation: spin 20s linear inifinite;
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 span {
   display: block;
 }
 
 .fixedHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #33504d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 80px;
 }
 
+section {
+  padding: 30px 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.about {
+  margin-top: 300px;
+}
 .about p {
   width: 60%;
 }
@@ -372,12 +366,37 @@ span {
           justify-content: flex-start;
 }
 .toolkit li {
+  font-size: 0.9rem;
   padding: 8px;
-  margin: 5px 5px 5px 0;
+  margin: 5px 10px 5px 0;
   border: 1px solid #b08564;
   border-radius: 15px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+
+.view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link {
+  margin-right: 15px;
+}
+.link a {
+  padding: 5px;
+  border-top: 1px solid #b08564;
+  border-bottom: 1px solid #b08564;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  letter-spacing: 2px;
+}
+.link a:hover {
+  color: #b08564;
+  border-left: 1px solid #b08564;
+  border-right: 1px solid #b08564;
+  border-radius: 15px;
 }
 
 .skillIcons {
@@ -412,24 +431,6 @@ span {
 .skillIcons li i {
   font-size: 2.5rem;
   padding: 10px 0;
-}
-
-.link {
-  text-transform: uppercase;
-}
-.link a {
-  padding: 5px;
-  border-top: 1px solid #b08564;
-  border-bottom: 1px solid #b08564;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  letter-spacing: 2px;
-}
-.link a:hover {
-  color: #b08564;
-  border-left: 1px solid #b08564;
-  border-right: 1px solid #b08564;
-  border-radius: 15px;
 }
 
 footer {

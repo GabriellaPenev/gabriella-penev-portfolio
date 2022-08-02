@@ -1,7 +1,21 @@
+section {
+    padding: 30px 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.about { 
+    margin-top: 300px;
+    p {
+        width: 60%;
+    }
+}
+
 .project {
     display: flex;
     align-items: center;
-
     .projectInfo,
     .preview {
         width: 50%;
@@ -17,14 +31,35 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     li {
+        font-size: 0.9rem;
         padding: 8px;
-        margin: 5px 5px 5px 0;
+        margin: 5px 10px 5px 0;
         border: 1px solid $secondary;
         border-radius: 15px;
         transition: 0.7s;
     }
 }
 
+.view {
+    display: flex;
+}
+
+.link {
+    margin-right: 15px;
+    a {
+    padding: 5px;
+    border-top: 1px solid $secondary;
+    border-bottom: 1px solid $secondary;
+    transition: 0.7s;
+    letter-spacing: 2px;
+    &:hover {
+        color: $secondary;
+        border-left: 1px solid $secondary;
+        border-right: 1px solid $secondary;
+        border-radius: 15px;
+        }
+    }
+}
 .skillIcons {
     display: flex;
     flex-wrap: wrap;
@@ -42,23 +77,6 @@
         i {
             font-size: 2.5rem;
             padding: 10px 0;
-        }
-    }
-}
-
-.link {
-    text-transform: uppercase;
-    a {
-        padding: 5px;
-        border-top: 1px solid $secondary;
-        border-bottom: 1px solid $secondary;
-        transition: 0.7s;
-        letter-spacing: 2px;
-        &:hover {
-            color: $secondary;
-            border-left: 1px solid $secondary;
-            border-right: 1px solid $secondary;
-            border-radius: 15px;
         }
     }
 }
