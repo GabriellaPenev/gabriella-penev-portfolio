@@ -417,7 +417,7 @@ h3 {
   transition: 0.7s;
   letter-spacing: 2px;
 }
-.link a:hover {
+.link a:hover, .link a:focus {
   color: #b08564;
   border-left: 1px solid #b08564;
   border-right: 1px solid #b08564;
@@ -450,7 +450,7 @@ h3 {
   padding: 10px;
   font-size: 0.8rem;
 }
-.skillIcons li:hover {
+.skillIcons li:hover, .skillIcons li:focus {
   color: #b08564;
 }
 .skillIcons li i {
@@ -470,7 +470,7 @@ h3 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.connectFlex li:hover {
+.connectFlex li:hover, .connectFlex li:focus {
   color: #b08564;
 }
 .connectFlex li i {
@@ -478,7 +478,7 @@ h3 {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.connectFlex li i:hover {
+.connectFlex li i:hover, .connectFlex li i:focus {
   font-size: 2.2rem;
 }
 
