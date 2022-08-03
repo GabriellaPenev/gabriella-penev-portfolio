@@ -258,6 +258,7 @@ h1 {
 
 html {
   font-size: 125%;
+  letter-spacing: 0.8px;
   font-family: "Red Hat Text", sans-serif;
   color: #F5F4F4;
   background-color: #33504d;
@@ -267,6 +268,14 @@ h1 {
   font-size: 3rem;
   font-weight: 500;
   text-align: center;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.4rem;
 }
 
 h1, h3, h4 {
@@ -281,6 +290,14 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.about p {
+  font-size: 1rem;
 }
 
 nav li {
@@ -366,7 +383,7 @@ h3 {
           justify-content: flex-start;
 }
 .toolkit li {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 8px;
   margin: 5px 10px 5px 0;
   border: 1px solid #b08564;
@@ -379,6 +396,14 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 10px 0;
+}
+
+.partnerSite {
+  margin: 10px 0;
+}
+.partnerSite a {
+  border-bottom: 1px solid #b08564;
 }
 
 .link {
@@ -410,8 +435,8 @@ h3 {
           justify-content: space-evenly;
 }
 .skillIcons li {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,6 +456,30 @@ h3 {
 .skillIcons li i {
   font-size: 2.5rem;
   padding: 10px 0;
+}
+
+.connectFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.connectFlex li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.connectFlex li:hover {
+  color: #b08564;
+}
+.connectFlex li i {
+  font-size: 2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.connectFlex li i:hover {
+  font-size: 2.2rem;
 }
 
 footer {

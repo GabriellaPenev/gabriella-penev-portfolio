@@ -6,12 +6,16 @@ h3 {
     text-align: center;
 }
 
+// About Section
+
 .about { 
     margin-top: 300px;
     p {
         width: 60%;
     }
 }
+
+// Projects Section
 
 .project {
     display: flex;
@@ -31,7 +35,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: flex-start;
     li {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding: 8px;
         margin: 5px 10px 5px 0;
         border: 1px solid $secondary;
@@ -42,6 +46,14 @@ h3 {
 
 .view {
     display: flex;
+    margin: 10px 0;
+}
+
+.partnerSite {
+    margin: 10px 0;
+    a {
+        border-bottom: 1px solid $secondary;
+    }
 }
 
 .link {
@@ -60,12 +72,15 @@ h3 {
         }
     }
 }
+
+// Skills Section
+
 .skillIcons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     li {
-        transition: 0.7s;
+        transition: 0.3s;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -77,6 +92,26 @@ h3 {
         i {
             font-size: 2.5rem;
             padding: 10px 0;
+        }
+    }
+}
+
+// Contact Section
+
+.connectFlex {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+        transition: 0.3s;
+        &:hover {
+            color: $secondary;
+    }
+    i {
+        font-size: 2rem;
+        transition: 0.2s;
+        &:hover {
+            font-size: 2.2rem;
+        }
         }
     }
 }
