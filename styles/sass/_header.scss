@@ -2,6 +2,7 @@ nav li {
     line-height: 2rem;
     border-bottom: 1px solid $primary;
     transition: 0.7s;
+
     &:hover {
         color: $secondary;
         border-bottom: 1px solid $secondary;
@@ -11,10 +12,19 @@ nav li {
 .logo {
     border-radius: 50%;
     width: 80px;
+    border: solid 1px $secondary;
+    padding: 5px;
 }
 
-span {
-    display: block;
+.name {
+    text-align: center;
+
+    h3 {
+        display: inline;
+        font-size: 1.4rem;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $secondary;
+    }
 }
 
 .fixedHeader {
@@ -25,6 +35,16 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 80px;    
+    padding: 60px 80px;
+    transition: ease all .5s;
+}
+
+.name:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 25px;
+    border-bottom: 1px solid $secondary;
 }
 

@@ -265,17 +265,17 @@ html {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 500;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 5vw, 1.8rem);
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
 }
 
 h1, h3, h4 {
@@ -314,10 +314,18 @@ nav li:hover {
 .logo {
   border-radius: 50%;
   width: 80px;
+  border: solid 1px #b08564;
+  padding: 5px;
 }
 
-span {
-  display: block;
+.name {
+  text-align: center;
+}
+.name h3 {
+  display: inline;
+  font-size: 1.4rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #b08564;
 }
 
 .fixedHeader {
@@ -335,6 +343,17 @@ span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 60px 80px;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+.name:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 25px;
+  border-bottom: 1px solid #b08564;
 }
 
 section {
@@ -482,7 +501,41 @@ h3 {
   font-size: 2.2rem;
 }
 
-footer {
+footer p {
   text-align: center;
   font-size: 0.8rem;
+  padding: 15px;
+  border-top: solid 1px #b08564;
+  border-bottom: solid 1px #b08564;
+}
+
+@media (max-width: 1000px) {
+  .project,
+.reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .project .projectInfo,
+.project .preview,
+.reverse .projectInfo,
+.reverse .preview {
+    width: 100%;
+  }
+  .toolkit,
+.view {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .fixedHeader {
+    padding: 20px 20px;
+  }
+  .logo {
+    width: 60px;
+  }
 }

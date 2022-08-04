@@ -1,8 +1,32 @@
+@media (max-width: 1000px) {
+    // flex column for the projects, images on top
 
-// make preview images bigger so laptop img is larger than padding around it
+    .project, 
+    .reverse {
+        flex-direction: column-reverse;
+        text-align: center;
+        .projectInfo,
+        .preview {
+        width: 100%;
+        }
+    }
 
-// 1080px
-// change nav to hamburger menu, shrink h1 size down, shrink logo down
+    .toolkit, 
+    .view {
+        justify-content: center;
+    }
+}
 
+
+@media (max-width: 800px) {
+    // change nav to hamburger menu
+    .fixedHeader {
+        padding: 20px 20px;    
+    }
+
+    .logo {
+        width: 60px;
+    }
+}
 // 900px
-// flex column for the projects, images on top, make skills icons into 2 full rows
+// make skills icons into 2 full rows

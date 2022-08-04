@@ -1,4 +1,7 @@
-footer {
+footer p {
     text-align: center;
     font-size: 0.8rem;
+    padding: 15px;
+    border-top: solid 1px $secondary;
+    border-bottom: solid 1px $secondary;
 }
