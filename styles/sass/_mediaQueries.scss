@@ -1,5 +1,4 @@
 @media (max-width: 1000px) {
-    // flex column for the projects, images on top
 
     .project, 
     .reverse {
@@ -17,9 +16,8 @@
     }
 }
 
-
 @media (max-width: 800px) {
-    // change nav to hamburger menu
+    
     .fixedHeader {
         padding: 20px 20px;    
     }
@@ -27,6 +25,32 @@
     .logo {
         width: 60px;
     }
+
+    nav li {
+        line-height: 1.4rem;
+    }
 }
-// 900px
-// make skills icons into 2 full rows
+
+
+@media (max-width: 550px) {
+    
+    h1 {
+        margin: 10px 0;
+    }
+
+    .fixedHeader {
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+
+    .desktopNav ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            padding: 5px 10px;
+            margin: 5px 10px;
+        }
+    }
+    // make skills icons into 2 full rows
+
+}
