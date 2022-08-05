@@ -243,7 +243,7 @@ img {
 
 .wrapper {
   max-width: 1260px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -265,18 +265,18 @@ html {
 }
 
 h1 {
-  font-size: clamp(1.4rem, 5vw, 3rem);
+  font-size: clamp(1.2rem, 5vw, 3rem);
   font-weight: 500;
   text-align: center;
 }
 
 h3 {
-  font-size: clamp(1.3rem, 5vw, 1.8rem);
+  font-size: clamp(1.1rem, 5vw, 1.8rem);
   text-align: center;
 }
 
 h4 {
-  font-size: clamp(1.1rem, 4vw, 1.4rem);
+  font-size: clamp(1rem, 4vw, 1.4rem);
 }
 
 h1, h3, h4 {
@@ -344,9 +344,9 @@ nav li:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 60px 80px;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  padding: 100px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 .name:after {
@@ -356,6 +356,10 @@ nav li:hover {
   width: 75%;
   padding-top: 25px;
   border-bottom: 1px solid #b08564;
+}
+
+.shrink {
+  padding: 40px 60px 20px;
 }
 
 section {
@@ -380,6 +384,11 @@ section {
 .project .projectInfo,
 .project .preview {
   width: 50%;
+}
+.project h4 {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #b08564;
 }
 
 .reverse {
@@ -450,6 +459,7 @@ section {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 60px 0;
 }
 .skillIcons li {
   -webkit-transition: 0.3s;
@@ -482,6 +492,7 @@ section {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 60px 0;
 }
 .connectFlex li {
   -webkit-transition: 0.3s;
@@ -542,16 +553,22 @@ footer p {
 }
 @media (max-width: 550px) {
   h1 {
-    margin: 10px 0;
+    margin: 10px 0 3px;
   }
   .fixedHeader {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px;
   }
-  .desktopNav ul {
+  nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -560,8 +577,13 @@ footer p {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .desktopNav ul li {
-    padding: 5px 10px;
-    margin: 5px 10px;
+  nav ul li {
+    padding: 0px 10px;
+    margin: 2px 10px;
+    font-size: 0.8rem;
+  }
+  .name:after {
+    width: 50%;
+    padding-top: 15px;
   }
 }

@@ -31,26 +31,32 @@
     }
 }
 
-
 @media (max-width: 550px) {
     
     h1 {
-        margin: 10px 0;
+        margin: 10px 0 3px;
     }
 
     .fixedHeader {
         flex-direction: column;
-        padding-bottom: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
     }
 
-    .desktopNav ul {
+    nav ul {
         display: flex;
         flex-direction: row;
         li {
-            padding: 5px 10px;
-            margin: 5px 10px;
+            padding: 0px 10px;
+            margin: 2px 10px;
+            font-size: 0.8rem;
         }
     }
     // make skills icons into 2 full rows
 
+    .name:after {
+        width: 50%;
+        padding-top: 15px;
+    }
 }

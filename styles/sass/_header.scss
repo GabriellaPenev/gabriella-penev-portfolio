@@ -34,8 +34,8 @@ nav li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 80px;
-    transition: ease all .5s;
+    padding: 100px;
+    transition: ease-in-out .5s;
 }
 
 .name:after {
@@ -47,3 +47,6 @@ nav li {
     border-bottom: 1px solid $secondary;
 }
 
+.shrink {
+    padding: 40px 60px 20px;
+}
