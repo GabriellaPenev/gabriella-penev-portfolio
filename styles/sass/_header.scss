@@ -20,7 +20,8 @@ nav li {
     text-align: center;
     h3 {
         display: inline;
-        font-size: clamp(.9rem, 3vw, 1.4rem);
+        font-size: clamp(.8rem, 3vw, 1.4rem);
+        font-weight: normal;
         padding-bottom: 5px;
         border-bottom: 1px solid $secondary;
     }
@@ -35,7 +36,8 @@ nav li {
     align-items: center;
     justify-content: space-between;
     padding: 100px;
-    transition: ease-in-out .5s;
+    transition: ease-in-out .4s;
+    z-index: 10;
 }
 
 .name:after {
@@ -48,5 +50,5 @@ nav li {
 }
 
 .shrink {
-    padding: 40px 60px 20px;
+    padding: 25px 40px;
 }

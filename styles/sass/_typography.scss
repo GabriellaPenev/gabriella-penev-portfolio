@@ -13,8 +13,12 @@ h1 {
     text-align: center;
 } 
 
+h2 {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+}
+
 h3 {
-    font-size: clamp(1.1rem, 5vw, 1.8rem);
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
     text-align: center;
 }
 
@@ -37,9 +41,9 @@ a {
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 5vw, 0.9rem);
 }
 
 .about p {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 5vw, 1rem);
 }

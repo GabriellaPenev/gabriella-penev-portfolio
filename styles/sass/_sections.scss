@@ -2,12 +2,45 @@ section {
     padding: 30px 0;
 }
 
+.subHeading {
+    scroll-margin-top: 6rem;
+}
+
 // About Section
 
 .about { 
     margin-top: 300px;
-    p {
-        width: 60%;
+    margin-bottom: 40px;
+    text-align: center;
+    .inTouch span {
+        color: $secondary;
+        display: inline;
+        border-bottom: 1px solid $primary;
+    }
+}
+
+.mouseDown {
+    position: absolute;
+    left: 50%;
+}
+
+.line {
+    width: 1px;
+    height: 5vh;
+    background: $secondary;
+    position: relative;
+    animation: scrollUpDown 2.5s infinite;
+}
+
+@keyframes scrollUpDown {
+    0% {
+        top: 5px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 5px;
     }
 }
 
