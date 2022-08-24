@@ -453,6 +453,14 @@ section {
           flex-direction: row-reverse;
 }
 
+.project,
+.reverse {
+  border: solid 1px #b08564;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
 .toolkit {
   display: -webkit-box;
   display: -ms-flexbox;
