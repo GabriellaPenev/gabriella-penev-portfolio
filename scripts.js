@@ -4,7 +4,6 @@ portfolio.descSpan = document.getElementById('descriptions');
 
 portfolio.descriptions = [
     'live',
-    'develop',
     'code',
     'create'
 ]
@@ -34,7 +33,7 @@ portfolio.init = () => {
     })
 
     portfolio.firstDescription();
-    setInterval(portfolio.cycleDescriptions, 3300);
+    setInterval(portfolio.cycleDescriptions, 2800);
 }
 
 portfolio.init();
