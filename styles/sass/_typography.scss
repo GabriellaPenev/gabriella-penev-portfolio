@@ -23,12 +23,13 @@ h3 {
 }
 
 h4 {
-    font-size: clamp(1rem, 4vw, 1.4rem);
+    font-size: clamp(0.7rem, 4vw, 1.4rem);
+    margin: 0 0 10px;
 }
 
 h1, h3, h4 {
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 ul {
@@ -41,9 +42,5 @@ a {
 }
 
 p {
-    font-size: clamp(0.8rem, 5vw, 0.9rem);
-}
-
-.about p {
-    font-size: clamp(0.8rem, 5vw, 1rem);
+    font-size: clamp(0.7rem, 3vw, 0.9rem);
 }

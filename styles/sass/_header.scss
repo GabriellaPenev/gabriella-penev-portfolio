@@ -24,6 +24,7 @@ nav li {
         font-weight: normal;
         padding-bottom: 5px;
         border-bottom: 1px solid $secondary;
+        margin: 0;
     }
 }
 
@@ -35,7 +36,7 @@ nav li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px;
+    padding: 100px 100px 25px;
     transition: ease-in-out .4s;
     z-index: 10;
 }
@@ -50,5 +51,5 @@ nav li {
 }
 
 .shrink {
-    padding: 25px 40px;
+    padding: 15px 40px;
 }

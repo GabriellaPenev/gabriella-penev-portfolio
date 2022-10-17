@@ -1,5 +1,20 @@
 @media (max-width: 1000px) {
 
+    .about {
+        flex-direction: column;
+
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .headshot {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
     .project, 
     .reverse {
         flex-direction: column-reverse;
@@ -24,7 +39,7 @@
     }
 
     .logo {
-        width: 60px;
+        width: 50px;
     }
 
     nav li {
@@ -44,11 +59,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 50px 20px;
+        padding: 50px 20px 20px;
     }
 
     .shrink {
-        padding: 10px 20px;
+        padding: 5px 20px;
     }
 
     nav ul {
@@ -66,8 +81,9 @@
     }
 
     .about { 
-            margin-top: 270px;
+            margin-top: 210px;
         }
+
 
     .subHeading {
         scroll-margin-top: 7rem;
@@ -80,8 +96,9 @@
 }
 
 @media (max-width: 380px) {
+
     .logo {
-        width: 50px;
+        width: 40px;
     }
 
     .skillIcons li i {

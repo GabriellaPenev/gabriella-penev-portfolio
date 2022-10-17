@@ -9,14 +9,37 @@ section {
 // About Section
 
 .about { 
-    margin-top: 300px;
+    margin-top: 228px;
     margin-bottom: 40px;
     text-align: center;
+    display: flex;
+    h2 {
+        margin: 0 0 10px;
+    }
     .inTouch span {
         color: $secondary;
         display: inline;
         border-bottom: 1px solid $primary;
     }
+    p {
+        margin: 5px 0;
+    }
+}
+
+.headshot {
+    width: 40%;
+    margin-left: 15px;
+}
+.intro-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headshot img {
+    border: none;
+    border-radius: 50%;
 }
 
 .mouseDown {
@@ -77,8 +100,8 @@ section {
     flex-wrap: wrap;
     justify-content: flex-start;
     li {
-        font-size: 0.8rem;
-        padding: 8px;
+        font-size: 0.7rem;
+        padding: 7px;
         margin: 5px 10px 5px 0;
         border: 1px solid $secondary;
         border-radius: 15px;
