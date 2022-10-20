@@ -1,7 +1,7 @@
 nav li {
-    line-height: 2rem;
     border-bottom: 1px solid $primary;
     transition: 0.7s;
+    line-height: 1.6rem;
     font-size: clamp(.9rem, 2vw, 1.1rem);;
     &:hover {
         color: $secondary;

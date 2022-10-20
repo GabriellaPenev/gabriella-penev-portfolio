@@ -1,7 +1,30 @@
-footer p {
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 15px;
-    border-top: solid 1px $secondary;
-    border-bottom: solid 1px $secondary;
+footer {
+    p {
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 15px;
+        border-top: solid 1px $secondary;
+        border-bottom: solid 1px $secondary;
+    }
+    .btn {
+        text-decoration: none;
+        display: block;
+        border: none;
+        background-color: transparent;
+        margin: 0 auto;
+        padding: 8px 0;
+        cursor: pointer;
+        font-size: 0.8rem;
+        color: $primary;
+        font-family: "Red Hat Text", sans-serif;
+        transition: 0.3s ease all;
+        &:active {
+            transform: scale(.8);
+        }
+        &:hover, 
+        &:focus {
+            transform: translateY(-5px);
+        }
+    }
 }
+

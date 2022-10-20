@@ -17,7 +17,6 @@ section {
         margin: 0 0 10px;
     }
     .inTouch span {
-        color: $secondary;
         display: inline;
         border-bottom: 1px solid $primary;
     }
@@ -35,6 +34,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .descriptions {
+        color: $secondary;
+    }
 }
 
 .headshot img {
@@ -53,6 +55,7 @@ section {
     background: $secondary;
     position: relative;
     animation: scrollUpDown 2.5s infinite;
+    transition: 0.3s ease-in all;
 }
 
 @keyframes scrollUpDown {
@@ -116,6 +119,7 @@ section {
 
 .partnerSite {
     margin: 10px 0;
+    line-height: 1.5;
     a {
         border-bottom: 1px solid $secondary;
     }

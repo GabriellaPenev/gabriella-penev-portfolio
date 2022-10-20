@@ -7,29 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriella Penev</title>
 
+    <!-- styles -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/f73f12df72.js" crossorigin="anonymous"></script>
 
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png" sizes="16x16" />
+
+    <!-- scripts -->
+    <script src="scripts.js" defer></script>
 
 </head>
 
 <body>
     <header>
         <div class="fixedHeader animate__animated animate__fadeIn">
-            <div><a href="https://www.gabriellapenev.com/">
+            <div class="logoContainer"><a href="https://www.gabriellapenev.com/">
                 <img class="logo" src="./assets/gp-logo.png"
-                    alt="White circular logo with the letters 'G' and 'P' stacked off-center in green">
+                    alt="White circular logo with the letters 'G' and 'P' stacked off-center in dark blue">
 
             </a></div>
             <div class="name">
@@ -58,7 +65,7 @@
                         coding you can find me cycling in the city, trying out new vegetarian restaurants, and obsessing over handmade
                         pottery.
                     </p>
-                    <p>Toronto is where I <span id="descriptions"></span>.</p>
+                    <p>Toronto is where I <span class="descriptions" id="descriptions"></span>.</p>
                     <p class="inTouch">Want to <span><a href="#connect">get in touch?</a></span></p>
                 </div>
                 <div class="headshot">
@@ -79,11 +86,11 @@
                     <h4><a href="https://www.caitlinenglish.ca/" target="_blank" rel="noopener noreferrer">Screenwriter Portfolio</a></h4>
                     <p>Developed a website for a client looking for a minimalist design to showcase their body of work, utilizing JS functionality and SASS to reflect their brand identity.</p>
                     <ul class="toolkit">
-                        <li>SASS</li>
                         <li>Javascript</li>
                         <li>Web Design</li>
-                        <li>Responsive</li>
+                        <li>SASS</li>
                         <li>Accessible</li>
+                        <li>Responsive</li>
                     </ul>
 
                     <div class="view">
@@ -94,7 +101,6 @@
                     </div>
                 </div>
             </div>
-
             
             <div class="project reverse">
                 <div class="preview">
@@ -302,10 +308,12 @@
         </section>
     </main>
     <footer class="wrapper">
-        <p>Made by Gabriella Penev © 2022</p>
+        <button class="btn" aria-label="Scroll to the top">
+            Back To The Top ↑
+        </button>
+        <p>Developed and Designed by Gabriella Penev © 2022</p>
     </footer>
 
-    <script src="scripts.js"></script>
 </body>
 
 
