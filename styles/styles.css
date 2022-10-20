@@ -711,8 +711,8 @@ footer .btn:hover, footer .btn:focus {
   }
   .shrink {
     padding: 15px 20px 5px;
-    -webkit-transform: translateY(-65px);
-            transform: translateY(-65px);
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
   }
   nav ul {
     display: -webkit-box;
