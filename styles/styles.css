@@ -306,6 +306,24 @@ p {
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
+.skipLink {
+  font-size: 0.8rem;
+  height: 30px;
+  padding: 10px;
+  position: absolute;
+  z-index: 20;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.skipLink:focus {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
 nav li {
   border-bottom: 1px solid #F5F4F4;
   -webkit-transition: 0.7s;
@@ -508,7 +526,7 @@ section {
 }
 .toolkit li {
   font-size: 0.7rem;
-  padding: 7px;
+  padding: 5px;
   margin: 5px 10px 5px 0;
   border: 1px solid #b08564;
   border-radius: 15px;
@@ -600,13 +618,13 @@ section {
   margin-top: 100px;
 }
 .connectFlex li {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 .connectFlex li:hover, .connectFlex li:focus {
   color: #b08564;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 .connectFlex li i {
   font-size: 2rem;

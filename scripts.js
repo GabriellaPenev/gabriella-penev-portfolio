@@ -35,7 +35,7 @@ portfolio.shrinkHeader = () => {
     window.addEventListener('scroll', () => {
         const header = document.querySelector('.fixedHeader');
     
-        if (window.pageYOffset > 5) {
+        if (window.pageYOffset > 80) {
             header.classList.add('shrink');
         } else {
             header.classList.remove('shrink');

@@ -32,13 +32,17 @@
 </head>
 
 <body>
+
+    <!-- Skip link -->
+    <a href="#mainContent" id="skipLink" class="skipLink">Skip to main content</a>
+
     <header>
         <div class="fixedHeader animate__animated animate__fadeIn">
             <div class="logoContainer"><a href="https://www.gabriellapenev.com/">
-                <img class="logo" src="./assets/gp-logo.png"
-                    alt="White circular logo with the letters 'G' and 'P' stacked off-center in dark blue">
+                    <img class="logo" src="./assets/gp-logo.png"
+                        alt="White circular logo with the letters 'G' and 'P' stacked off-center in dark blue">
 
-            </a></div>
+                </a></div>
             <div class="name">
                 <h1><a href="https://www.gabriellapenev.com/">Gabriella Penev</a></h1>
                 <h3>Web Developer</h3>
@@ -53,23 +57,28 @@
         </div>
     </header>
 
-    <main>
+    <main id="mainContent">
         <section class="wrapper">
             <div class="about animate__animated animate__fadeIn">
                 <div class="intro-text">
                     <h2>Hi, I'm Gaby</h2>
-                    <p>I am a front end web developer with an interest in creating dynamic and engaging web applications. I combine
-                        seamless designs with responsive, and accessible code to create meaningful user experiences. I believe innovation, critical thinking, and collaboration go hand in hand, and I am keen to work on projects that seek to bridge ideas, and serve community. </p>
-                        <p>
+                    <p>I am a front end web developer with an interest in creating dynamic and engaging web
+                        applications. I combine
+                        seamless designs with responsive, and accessible code to create meaningful user experiences. I
+                        believe innovation, critical thinking, and collaboration go hand in hand, and I am keen to work
+                        on projects that seek to bridge ideas, and serve community. </p>
+                    <p>
                         When I'm not
-                        coding you can find me cycling in the city, trying out new vegetarian restaurants, and obsessing over handmade
+                        coding you can find me cycling in the city, trying out new vegetarian restaurants, and obsessing
+                        over handmade
                         pottery.
                     </p>
                     <p>Toronto is where I <span class="descriptions" id="descriptions"></span>.</p>
                     <p class="inTouch">Want to <span><a href="#connect">get in touch?</a></span></p>
                 </div>
                 <div class="headshot">
-                    <img src="./assets/gabriella-penev1.jpg" alt="Headshot of Gabriella Penev, she is wearing a blue button up sleeveless shirt and is smiling at the camera.">
+                    <img src="./assets/gabriella-penev.jpg"
+                        alt="Headshot of Gabriella Penev, she is wearing a blue button up sleeveless shirt and is smiling at the camera.">
                 </div>
             </div>
             <div class="mouseDown">
@@ -78,13 +87,45 @@
         </section>
         <section class="wrapper subHeading" id="projects">
             <h3>Projects</h3>
-            <div class="project">
+
+            <div class="project reverse">
                 <div class="preview">
-                    <img src="./assets/cait-english-screenwriter-preview.png" alt="Preview image of Caitlin English Screenwriter website">
+                    <img src="./assets/labx-preview.png" alt="Preview image of the LABX website">
                 </div>
                 <div class="projectInfo">
-                    <h4><a href="https://www.caitlinenglish.ca/" target="_blank" rel="noopener noreferrer">Screenwriter Portfolio</a></h4>
-                    <p>Developed a website for a client looking for a minimalist design to showcase their body of work, utilizing JS functionality and SASS to reflect their brand identity.</p>
+                    <h4>
+                        <a href="https://www.labximpact.com/" target="_blank" rel="noopener noreferrer">labx impact</a>
+                    </h4>
+                    <p>Using React, JavaScript ES6+ and CSS, I designed and built a fully responsive and accessible site
+                        for a Toronto-based arts consultancy collective.
+                    </p>
+                    <ul class="toolkit">
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>CSS3</li>
+                        <li>Web Design</li>
+                        <li>Responsive</li>
+                        <li>Accessible</li>
+                    </ul>
+
+                    <div class="view">
+                        <p class="link"><a href="https://github.com/GabriellaPenev/LABx" target="_blank"
+                                rel="noopener noreferrer">View code</a></p>
+                        <p class="link"><a href="https://www.labximpact.com/" target="_blank"
+                                rel="noopener noreferrer">View live</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="preview">
+                    <img src="./assets/cait-english-screenwriter-preview.png"
+                        alt="Preview image of Caitlin English Screenwriter website">
+                </div>
+                <div class="projectInfo">
+                    <h4><a href="https://www.caitlinenglish.ca/" target="_blank" rel="noopener noreferrer">Screenwriter
+                            Portfolio</a></h4>
+                    <p>Developed a website for a client looking for a minimalist design to showcase their body of work,
+                        utilizing JS functionality and SASS to reflect their brand identity.</p>
                     <ul class="toolkit">
                         <li>Javascript</li>
                         <li>Web Design</li>
@@ -101,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="project reverse">
                 <div class="preview">
                     <img src="./assets/quickflicks-preview1.png" alt="Preview image of the Quick Flick Picker website">
@@ -148,7 +189,8 @@
                             Colour Capsule
                         </a>
                     </h4>
-                    <p>Using a React framework and Firebase, this app allows users to create, store, and delete custom color boards.</p>
+                    <p>Using a React framework and Firebase, this app allows users to create, store, and delete custom
+                        color boards.</p>
                     <ul class="toolkit">
                         <li>React</li>
                         <li>Firebase</li>
@@ -177,7 +219,8 @@
                             rel="noopener noreferrer">Drag Netwerq
                         </a>
                     </h4>
-                    <p>Powered by the 'No Key No Shade' API, this Vanilla Javascript based application displays the most memorable quotes from every season of Ru Paul's Drag Race, revealing which Queen said the
+                    <p>Powered by the 'No Key No Shade' API, this Vanilla Javascript based application displays the most
+                        memorable quotes from every season of Ru Paul's Drag Race, revealing which Queen said the
                         famous phrase.</p>
                     <ul class="toolkit">
                         <li>JavaScript</li>
@@ -286,13 +329,13 @@
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                 </li>
-            
-                <li> 
-                    <a href="https://www.linkedin.com/in/gabriella-penev/" target="_blank" rel="noopener noreferrer"> 
+
+                <li>
+                    <a href="https://www.linkedin.com/in/gabriella-penev/" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </li>
-            
+
                 <li>
                     <a href="https://calendly.com/gpenev" target="_blank" rel="noopener noreferrer">
                         <i class="fa-regular fa-calendar-check"></i>
