@@ -410,6 +410,13 @@ section {
 .about .inTouch span {
   display: inline;
   border-bottom: 1px solid #F5F4F4;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+.about .inTouch span:hover, .about .inTouch span:focus {
+  letter-spacing: 1.6px;
+  color: #b08564;
+  border-bottom: 1px solid #b08564;
 }
 .about p {
   margin: 5px 0;
@@ -675,7 +682,7 @@ footer .btn:hover, footer .btn:focus {
     margin-bottom: 20px;
   }
   .project,
-.reverse {
+  .reverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -683,13 +690,13 @@ footer .btn:hover, footer .btn:focus {
     text-align: center;
   }
   .project .projectInfo,
-.project .preview,
-.reverse .projectInfo,
-.reverse .preview {
+  .project .preview,
+  .reverse .projectInfo,
+  .reverse .preview {
     width: 100%;
   }
   .toolkit,
-.view {
+  .view {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -781,7 +788,7 @@ footer .btn:hover, footer .btn:focus {
     padding: 25px 0 40px;
   }
   .about,
-.connect p {
+  .connect p {
     margin-bottom: 25px;
   }
   .connectFlex {
