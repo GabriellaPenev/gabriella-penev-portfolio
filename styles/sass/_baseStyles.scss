@@ -1,6 +1,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 img {
@@ -24,3 +25,6 @@ h1 {
     padding: 0;
 }
 
+.animate__animated {
+    --animate-duration: 1.4s;
+}

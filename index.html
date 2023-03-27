@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +36,7 @@
     <a href="#mainContent" id="skipLink" class="skipLink">Skip to main content</a>
 
     <header>
-        <div class="fixedHeader animate__animated animate__fadeIn">
+        <div class="fixedHeader animate__animated animate__fadeInDown">
             <div class="logoContainer"><a href="https://www.gabriellapenev.com/">
                     <img class="logo" src="./assets/gp-logo.png"
                         alt="White circular logo with the letters 'G' and 'P' stacked off-center in dark blue">
@@ -59,8 +58,8 @@
 
     <main id="mainContent">
         <section class="wrapper">
-            <div class="about animate__animated animate__fadeIn">
-                <div class="intro-text">
+            <div class="about">
+                <div class="intro-text animate__animated animate__fadeInUp">
                     <h2>Hi, I'm Gaby</h2>
                     <p>I'm a Front End Developer that enjoys building responsive web applications with clean and
                         accessible code. I love working on projects that allow me to continuously improve, and
@@ -74,7 +73,7 @@
                     <p>Toronto is where I <span class="descriptions" id="descriptions"></span>.</p>
                     <p class="inTouch">Want to <span><a href="#connect">get in touch?</a></span></p>
                 </div>
-                <div class="headshot">
+                <div class="headshot animate__animated animate__fadeInUp">
                     <img src="./assets/gabriella-penev.jpg"
                         alt="Headshot of Gabriella Penev, she is wearing a blue button up sleeveless shirt and is smiling at the camera.">
                 </div>
@@ -83,13 +82,13 @@
                 <div class="line"></div>
             </div>
         </section>
-        <section class="wrapper subHeading" id="projects">
+        <section class="wrapper subHeading animate__animated animate__fadeIn" id="projects">
             <h3>Projects</h3>
 
             <div class="project">
                 <div class="preview">
                     <a href="https://cityspinner.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/cityspinner-preview.png" alt="Preview image of City Spinner website">
+                        <img src="./assets/cityspinner-preview.png" alt="Preview image of City Spinner app">
                     </a>
                 </div>
                 <div class="projectInfo">
@@ -280,7 +279,7 @@
             </div>
         </section>
 
-        <section class="wrapper subHeading" id="skills">
+        <section class="wrapper subHeading animate__animated animate__fadeIn" id="skills">
             <h3>Skills</h3>
             <div class="skills">
                 <ul class="skillIcons">
@@ -297,7 +296,7 @@
                 </ul>
             </div>
         </section>
-        <section class="wrapper subHeading connect" id="connect">
+        <section class="wrapper subHeading connect animate__animated animate__fadeIn" id="connect">
             <h3>Connect</h3>
             <p>If you want to chat about how we could work together, reach out!</p>
             <div class="mouseDown">
@@ -330,7 +329,7 @@
             </ul>
         </section>
     </main>
-    <footer class="wrapper">
+    <footer class="wrapper animate__animated animate__fadeIn">
         <button class="btn" aria-label="Scroll to the top">
             Back To The Top ↑
         </button>

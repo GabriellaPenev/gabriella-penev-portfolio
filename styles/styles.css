@@ -237,6 +237,7 @@ html {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 img {
@@ -258,6 +259,10 @@ input,
 h1 {
   margin: 0;
   padding: 0;
+}
+
+.animate__animated {
+  --animate-duration: 1.4s;
 }
 
 html {
